@@ -12,8 +12,33 @@ pub struct OracleResponse<T> {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct ReservoirHistoryRequest {
+pub struct ReservoirNameRequest {
     pub p_embalse_nombre: String,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub struct ReservoirMax {
+    pub name: String,
+    pub max: f32,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub struct ReservoirMin {
+    pub name: String,
+    pub min: f32,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub struct ReservoirMean {
+    pub name: String,
+    pub mean: f32,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub struct OracleRet<T> {
+    // rename from "~ret"
+    #[serde(rename = "~ret")]
+    pub ret: T,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

@@ -2,7 +2,7 @@ use axum::{
     routing::{get, post},
     Router,
 };
-use routes::{all_reservoirs, reservoir_by_name, reservoir_history, reservoirs_in_range};
+use routes::{all_reservoirs, reservoir_history, reservoir_max, reservoir_mean, reservoir_min};
 use tower_http::cors::CorsLayer;
 use tracing::info;
 
@@ -16,13 +16,16 @@ async fn main() {
 
     let port = std::env::var("PORT").unwrap_or_else(|_| "3000".to_string());
 
+    let client = reqwest::Client::new();
+
     let app = Router::new()
-        // `GET /` goes to `root`
         .route("/", get(root))
         .route("/reservoirs/:page", get(all_reservoirs))
-        .route("/reservoirs", post(reservoirs_in_range))
-        .route("/reservoir/:name", get(reservoir_by_name))
-        .route("/reservoir/:id/historical", get(reservoir_history))
+        .route("/reservoir/max", post(reservoir_max))
+        .route("/reservoir/min", post(reservoir_min))
+        .route("/reservoir/mean", post(reservoir_mean))
+        .route("/reservoir/historical", post(reservoir_history))
+        .with_state(client)
         .layer(CorsLayer::permissive());
 
     let listener = tokio::net::TcpListener::bind(format!("0.0.0.0:{}", port))
