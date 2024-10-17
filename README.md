@@ -49,6 +49,7 @@ Initially, we aimed to use React, driven by its popularity and the wide range of
 
 We began by sketching the design by hand, which we later processed using GPT-4's computer vision capabilities. This innovative approach enabled us to automatically interpret the sketches and receive nuanced suggestions for improvement. These recommendations were integrated into Vercel V0 Chat, which further accelerated the frontend development process. Once we had a solid design plan, we implemented it using Svelte and Bulma, ensuring a clean, responsive, and aesthetically pleasing user interface. Before diving into the coding, we held a brainstorming session to carefully map out the structure and flow of the page, ensuring a cohesive and user-friendly experience.
 
+<<<<<<< HEAD
 
 ---
 
@@ -141,6 +142,11 @@ Finally, we joined the tables for reservoirs, water, and the reservoir listing u
 
 ---
 
+=======
+**Backend Development**
+
+For the backend, we chose to work with Rust, prioritizing performance and security. Rust's emphasis on memory safety without sacrificing speed allowed us to write highly optimized code. The language's inherent security features also provided peace of mind, knowing that our solution would be both robust and efficient. We integrated the backend seamlessly with Oracle Cloud, ensuring that data handling was smooth and secure throughout the entire project lifecycle.
+>>>>>>> frontend
 
 **Challenges and Solutions**
 

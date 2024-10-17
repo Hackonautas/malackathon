@@ -1,59 +1,82 @@
 <script>
-	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
+    import Card from "$lib/components/Card.svelte";
+
+    const dirección = "presa.png"
+    let cards = [
+        {
+            name: "patata",
+            capacity: 30,
+            image: dirección, // Ruta de la imagen
+            place: "Málaga, Andalucía",
+        },
+        {
+            name: "tomate",
+            capacity: 40,
+            image: dirección,
+            place: "Málaga, Andalucía",
+        },
+        {
+            name: "cebolla",
+            capacity: 50,
+            image: dirección,
+            place: "Málaga, Andalucía",
+        },
+        {
+            name: "zanahoria",
+            capacity: 20,
+            image: dirección,
+            place: "Málaga, Andalucía",
+        },
+        {
+            name: "lechuga",
+            capacity: 25,
+            image: dirección,
+            place: "Málaga, Andalucía",
+        },
+        {
+            name: "pepino",
+            capacity: 15,
+            image: dirección,
+            place: "Málaga, Andalucía",
+        },
+    ];
 </script>
 
+<div class="field">
+    <p class="control has-icons-left has-icons-right">
+        <input class="input is-rounded" type="text" placeholder="Nombre del pantano o embalse" />
+      <span class="icon is-left">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </span>
+    </p>
+  </div>
+
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+    <title>Water Management</title>
+    <meta
+        name="description"
+        content="Manage and monitor water resources efficiently."
+    />
 </svelte:head>
 
-<section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
-			</picture>
-		</span>
-
-		to your new<br />SvelteKit app
-	</h1>
-
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
-
-	<Counter />
-</section>
-
 <style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
-	}
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px; /* Aumenta el espacio entre las tarjetas */
+    }
 
-	h1 {
-		width: 100%;
-	}
-
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
 </style>
+
+<div class="card-container">
+    {#each cards as card}
+        <Card
+            name={card.name}
+            capacity={card.capacity}
+            image={card.image}
+            place={card.place}
+        />
+    {/each}
+</div>
+
+

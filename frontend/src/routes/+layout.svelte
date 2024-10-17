@@ -1,53 +1,52 @@
 <script>
-	import Header from './Header.svelte';
-	import '../app.css';
+    import "../app.css";
 </script>
 
-<div class="app">
-	<Header />
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+            ALVEUS
+        </a>
 
-	<main>
-		<slot />
-	</main>
+        <a
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasicExample"
+        >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
 
-	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-	</footer>
-</div>
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="/listPage"> Listado </a>
 
-<style>
-	.app {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-	}
+            <a class="navbar-item" href="/about"> Información </a>
 
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
+            <a class="navbar-item"> Ajustes y Accesibilidad </a>
 
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
-	}
+            <a class="navbar-item"> Contacto </a>
 
-	footer a {
-		font-weight: bold;
-	}
+        </div>
 
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
-	}
-</style>
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="buttons">
+                    <a class="button is-primary">
+                        <strong>Sign up</strong>
+                    </a>
+                    <a class="button is-light"> Log in </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main class="container mx-auto px-4">
+    <slot />
+</main>
