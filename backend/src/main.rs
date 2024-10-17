@@ -3,7 +3,7 @@ use axum::{
     routing::{get, post},
     Router,
 };
-use routes::{all_reservoirs, reservoir_by_id, reservoir_history, reservoirs_in_range};
+use routes::{all_reservoirs, reservoir_by_name, reservoir_history, reservoirs_in_range};
 use tower_http::cors::CorsLayer;
 use tracing::info;
 
@@ -22,7 +22,7 @@ async fn main() {
         .route("/", get(root))
         .route("/reservoirs", get(all_reservoirs))
         .route("/reservoirs", post(reservoirs_in_range))
-        .route("/reservoir/:id", get(reservoir_by_id))
+        .route("/reservoir/:name", get(reservoir_by_name))
         .route("/reservoir/:id/historical", get(reservoir_history))
         .layer(CorsLayer::permissive());
 
