@@ -1,5 +1,5 @@
 <script>
-    import "../app.css";
+    import "../../app.css";
 </script>
 
 <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -24,7 +24,7 @@
 
     <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-            <a class="navbar-item" href="/listPage"> Listado </a>
+            <a class="navbar-item"> Listado </a>
 
             <a class="navbar-item"> Información </a>
 
