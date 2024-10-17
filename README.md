@@ -77,7 +77,7 @@ Before you begin, ensure you have met the following requirements:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your-username/alveus.git
+   git clone https://github.com/Hackonautas/malackathon.git
    cd alveus
 
 2. Setup the Frontend
