@@ -12,6 +12,11 @@ pub struct OracleResponse<T> {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
+pub struct ReservoirHistoryRequest {
+    pub p_embalse_nombre: String,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
 pub struct Reservoir {
     // id: usize,
     #[serde(rename = "codigo")]
