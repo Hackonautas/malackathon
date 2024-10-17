@@ -15,22 +15,21 @@ mod services;
 async fn main() {
     tracing_subscriber::fmt::init();
 
-    services::connect_to_db().await;
+    let port = std::env::var("PORT").unwrap_or_else(|_| "3000".to_string());
+    let addr = format!("http://localhost:{port}");
 
     let app = Router::new()
         // `GET /` goes to `root`
         .route("/", get(root))
-        .route("/reservoirs", get(all_reservoirs))
+        .route("/reservoirs/:page", get(all_reservoirs))
         .route("/reservoirs", post(reservoirs_in_range))
         .route("/reservoir/:name", get(reservoir_by_name))
         .route("/reservoir/:id/historical", get(reservoir_history))
         .layer(
             CorsLayer::new()
-                .allow_origin("http://localhost:3000".parse::<HeaderValue>().unwrap())
+                .allow_origin(addr.parse::<HeaderValue>().unwrap())
                 .allow_methods([Method::GET]),
         );
-
-    let port = std::env::var("PORT").unwrap_or_else(|_| "3000".to_string());
 
     let listener = tokio::net::TcpListener::bind(format!("0.0.0.0:{}", port))
         .await

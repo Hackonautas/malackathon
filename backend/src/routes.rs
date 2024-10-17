@@ -5,6 +5,8 @@ use crate::models::{Coords, OracleResponse, Reservoir, ReservoirHistoryRequest};
 
 const BASE_URL: &str = "https://gd419a46b456aec-db2.adb.eu-madrid-1.oraclecloudapps.com/ords/backo";
 
+const PAGE_SIZE: usize = 20;
+
 // 'f_get_maximo_historico_agua/'
 
 fn get_url(endpoint: &str) -> String {
@@ -12,8 +14,10 @@ fn get_url(endpoint: &str) -> String {
 }
 
 /// Get all reservoirs
-pub async fn all_reservoirs() -> Json<Vec<Reservoir>> {
-    let res: OracleResponse<Reservoir> = reqwest::get(get_url("v_listado_info/"))
+pub async fn all_reservoirs(page: Option<Path<usize>>) -> Json<Vec<Reservoir>> {
+    let offset = PAGE_SIZE * page.map(|x| x.0).unwrap_or(0);
+    let endpoint = format!("v_listado_info?limit={}&offset={}", PAGE_SIZE, offset);
+    let res: OracleResponse<Reservoir> = reqwest::get(get_url(&endpoint))
         .await
         .unwrap()
         .json()
