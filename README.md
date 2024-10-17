@@ -79,18 +79,18 @@ Before you begin, ensure you have met the following requirements:
    cd alveus
 
 2. **Setup the Frontend**
-
+```
 cd frontend
 npm install
 npm run dev
 
-
+```
 3. **Setup the Backend**
-
+```
 cd ../backend
 cargo build --release
 cargo run --release
-
+```
 
 4. **Configure Oracle Cloud**
 
