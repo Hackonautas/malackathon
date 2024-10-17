@@ -3,7 +3,7 @@
 	import logo from '$lib/images/svelte-logo.svg';
   </script>
   
-  <header class="bg-blue-900 p-4 flex items-center justify-between">
+  <header class="bg-blue-900 p-4 flex items-center justify-between">vb
 	<div class="flex items-center space-x-4">
 	  <a href="https://kit.svelte.dev">
 		<img src={logo} alt="SvelteKit" class="h-10" />
