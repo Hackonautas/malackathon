@@ -49,13 +49,100 @@ Initially, we aimed to use React, driven by its popularity and the wide range of
 
 We began by sketching the design by hand, which we later processed using GPT-4's computer vision capabilities. This innovative approach enabled us to automatically interpret the sketches and receive nuanced suggestions for improvement. These recommendations were integrated into Vercel V0 Chat, which further accelerated the frontend development process. Once we had a solid design plan, we implemented it using Svelte and Bulma, ensuring a clean, responsive, and aesthetically pleasing user interface. Before diving into the coding, we held a brainstorming session to carefully map out the structure and flow of the page, ensuring a cohesive and user-friendly experience.
 
-**Backend Development**
+---
 
-For the backend, we chose to work with Rust, prioritizing performance and security. Rust's emphasis on memory safety without sacrificing speed allowed us to write highly optimized code. The language's inherent security features also provided peace of mind, knowing that our solution would be both robust and efficient. We integrated the backend seamlessly with Oracle Cloud, ensuring that data handling was smooth and secure throughout the entire project lifecycle.
+**Backend of the "Alveus" Project**
+
+This backend is responsible for managing and processing data related to reservoirs and their water volumes, with the goal of providing updated information on the water status of various reservoirs through both historical and real-time data. The data is structured across three main files, each containing complementary information: reservoirs, water, and a reservoir listing.
+
+- **Technology Stack**
+
+For the backend, we chose to work with Rust, prioritizing performance and security. Rust's emphasis on memory safety without sacrificing speed allowed us to write highly optimized code. The language's inherent security features provided peace of mind, knowing that our solution would be both robust and efficient. We integrated the backend seamlessly with Oracle Cloud, ensuring that data handling was smooth and secure throughout the entire project lifecycle.
+
+- **Data Loading**
+
+To ensure scalability and facilitate the handling of large volumes of data, we used SQL Developer to load and manipulate data from the three primary files. This tool allows us to manage large tables and optimize queries.
+
+- **Data Structure**
+
+The following are descriptions of the three datasets used in the project:
+
+ Reservoir Data
+```
+ID: Unique identifier for each reservoir.
+
+AMBITO_NOMBRE: Name of the hydrographic basin or region to which the reservoir belongs.
+
+EMBALSE_NOMBRE: Name of the reservoir.
+
+AGUA_TOTAL: Total volume of water stored in the reservoir (in cubic hectometers).
+
+ELECTRICO_FLAG: Binary indicator for whether the reservoir is used for electricity generation (0 = Not used, 1 = Used for electricity generation).
+```
+
+ Water Data
+```
+FECHA: Date and time of the water measurement in the reservoir.
+
+AGUA_ACTUAL: Current volume of water stored in the reservoir on the specified date (in cubic hectometers).
+
+ID: Unique identifier linking the measurement to the corresponding reservoir.
+```
+
+ Reservoir Listing
+```
+CODIGO: Unique code for the reservoir.
+
+NOMBRE: Official name of the reservoir or dam.
+
+EMBALSE: Alternative or common name of the reservoir.
+
+X: X coordinate (longitude) of the reservoir.
+
+Y: Y coordinate (latitude) of the reservoir.
+
+DEMARC: Hydrographic demarcation to which the reservoir belongs.
+
+CAUCE: Name of the watercourse or river where the reservoir is located.
+
+GOOGLE: Google Maps search link for the reservoir.
+
+OPENSTREETMAP: OpenStreetMap link to the reservoir.
+
+WIKIDATA: Wikidata link to the reservoir.
+
+PROVINCIA: Province in which the reservoir is located.
+
+CCAA: Autonomous Community in which the reservoir is located.
+
+TIPO: Type of dam (e.g., loose materials, concrete, etc.).
+
+COTA_CORON: Elevation of the dam crest (in meters above sea level).
+
+ALT_CIMIEN: Foundation height or maximum dam height (in meters).
+
+INFORME: Link to a report or web service related to the reservoir.
+```
+
+- **Data Processing**
+
+**Duplicate Row Removal**: During the data cleaning process, duplicate rows and NaN values were removed. In case of duplicates, the row with the most available data was retained.
+
+**Statistical Functions**: Functions were implemented to retrieve maximum, minimum, historical, and average values of the water volume stored in each reservoir.
+
+**Temporal Selection**: We added the ability to select data based on specific time ranges to analyze changes in water storage volumes over time.
+
+
+- **Table Joining**
+
+Finally, we joined the tables for reservoirs, water, and the reservoir listing using the ID common to all of them. This allowed us to combine geographic and technical data for each reservoir with historical water measurements, providing a complete view of the status and capacity of the reservoirs.
+
+
+---
 
 **Challenges and Solutions**
 
-One of the most significant challenges we faced was the shift in our frontend technology stack. While React and daisyui is a powerful tool, its steep learning curve and the complexity of setting it up in such a short timeframe posed issues that slowed our initial progress. After recognizing this, switching to Svelte and Bulma proved to be a game-changer, as it allowed us to regain momentum and work in a more straightforward, adaptable environment. Another challenge was ensuring that the backend architecture, designed in Rust, could efficiently communicate with the frontend and handle cloud interactions with Oracle. However, by leveraging the strengths of each team member, we were able to overcome these obstacles effectively.
+One of the most significant challenges we faced was the shift in our frontend technology stack. While Svelte and Daisyui are powerful tools, its steep learning curve and the complexity of setting it up in such a short timeframe posed issues that slowed our initial progress, to be specific we took around 3 hours trying to set ii up. After recognizing this, switching to Bulma but continuing with Svelte proved to be a game-changer, as it allowed us to regain momentum and work in a more straightforward, adaptable environment. Another challenge was ensuring that the backend architecture, designed in Rust, could efficiently communicate with the frontend and handle cloud interactions with Oracle through REST services. However, by leveraging the strengths of each team member, we were able to overcome these obstacles effectively.
 
 **Conclusion**
 
