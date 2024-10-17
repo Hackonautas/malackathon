@@ -8,6 +8,8 @@
     $: filtered_data = data.embalses.filter((e) =>
         e.embalse.toLowerCase().startsWith(txt),
     );
+
+    let page = 1;
 </script>
 
 <svelte:head>
@@ -40,3 +42,18 @@
         </div>
     {/each}
 </div>
+
+<nav class="pagination" role="navigation" aria-label="pagination">
+    <ul class="pagination-list">
+
+      <li>
+        <a href="#" class="pagination-link" aria-label="Goto page {page-1}">{page-1}</a>
+      </li>
+      <li>
+        <a class="pagination-link is-current" aria-label="Page {page}" aria-current="page">{page}</a>
+      </li>
+      <li>
+        <a href="#" class="pagination-link" aria-label="Goto page {page+1}">{page+1}</a>
+      </li>
+    </ul>
+  </nav>
