@@ -12,7 +12,7 @@
   - - [📝 Project Report](#-project-report)
     - [🔍 Features](#-features)
     - [🛠️ Technologies Used](#️-technologies-used)
-    - [🔍 Colors](#-Colors)
+    - [🎨 Color Palette: 🟦 🟪 ⚪️ 🟫](#-Colors)
   - [🌐 Live Demo](#-live-demo)
   - [💾 Installation](#-installation)
     - [⚙️ Prerequisites](#️-prerequisites)
@@ -89,7 +89,7 @@ This hackathon experience has been incredibly rewarding. It allowed us to push t
   - [Oracle Cloud](https://www.oracle.com/cloud/) - Comprehensive cloud services for databases and hosting.
 ---
 
-## Color Scheme Justification
+## 🎨 Color Palette: 🟦 🟪 ⚪️ 🟫
 
 In the development of our website, we carefully selected a color palette focused on accessibility for individuals with visual impairments. Our goal is to ensure that all users can easily navigate and comprehend the content without difficulty. The combination of colors we chose follows the principles outlined by the WCAG (Web Content Accessibility Guidelines) to maximize readability and contrast.
 
