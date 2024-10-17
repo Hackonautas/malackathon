@@ -54,7 +54,7 @@ For the backend, we chose to work with Rust, prioritizing performance and securi
 
 **Challenges and Solutions**
 
-One of the most significant challenges we faced was the shift in our frontend technology stack. While React is a powerful tool, its steep learning curve and the complexity of setting it up in such a short timeframe posed issues that slowed our initial progress. After recognizing this, switching to Svelte and Bulma proved to be a game-changer, as it allowed us to regain momentum and work in a more straightforward, adaptable environment. Another challenge was ensuring that the backend architecture, designed in Rust, could efficiently communicate with the frontend and handle cloud interactions with Oracle. However, by leveraging the strengths of each team member, we were able to overcome these obstacles effectively.
+One of the most significant challenges we faced was the shift in our frontend technology stack. While React and daisyui is a powerful tool, its steep learning curve and the complexity of setting it up in such a short timeframe posed issues that slowed our initial progress. After recognizing this, switching to Svelte and Bulma proved to be a game-changer, as it allowed us to regain momentum and work in a more straightforward, adaptable environment. Another challenge was ensuring that the backend architecture, designed in Rust, could efficiently communicate with the frontend and handle cloud interactions with Oracle. However, by leveraging the strengths of each team member, we were able to overcome these obstacles effectively.
 
 **Conclusion**
 
