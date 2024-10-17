@@ -74,7 +74,7 @@ This hackathon experience has been incredibly rewarding. It allowed us to push t
 - **High Performance:** Backend developed in Rust for speed and efficiency.
 - **Modern Frontend:** Utilizes Svelte for a reactive and seamless user experience.
 - **Secure & Scalable:** Hosted on Oracle Cloud for reliability and scalability.
-
+---
 ### 🛠️ Technologies Used
 
 - **Frontend:**
@@ -86,7 +86,7 @@ This hackathon experience has been incredibly rewarding. It allowed us to push t
   
 - **Database & Hosting:**
   - [Oracle Cloud](https://www.oracle.com/cloud/) - Comprehensive cloud services for databases and hosting.
-
+---
 ## 🌐 Live Demo
 
 Check out the live version of **Alveus** [here](https://your-live-demo-link.com).
@@ -101,7 +101,7 @@ Before you begin, ensure you have met the following requirements:
 - **Rust** installed. [Install Rust](https://www.rust-lang.org/tools/install)
 - An **Oracle Cloud** account with access to set up databases and instances.
 - **Git** installed. [Download Git](https://git-scm.com/)
-
+---
 ### 📦 Setup
 
 1. **Clone the Repository**
@@ -129,12 +129,14 @@ cargo run --release
 Ensure you have your Oracle Cloud credentials and database set up. Update the environment variables accordingly.
 
 
-
+---
 🖥️ Usage
 
 🔗 Accessing the Web App
 
 Once the frontend and backend are running, navigate to http://localhost:3000 in your browser to access Alveus.
+
+---
 
 📊 Exploring Reservoir Data
 
@@ -145,7 +147,7 @@ Once the frontend and backend are running, navigate to http://localhost:3000 in 
 - **Statistics**: Access average water levels and other relevant statistics.
 
  - **Graphs**: Interact with dynamic charts to visualize data over time.
-
+---
 
 🔧 Configuration
 
@@ -178,7 +180,7 @@ cargo run --release
 This will apply the necessary migrations to set up the database schema.
 
 
-
+---
 🧑‍💻 Contributing
 
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
