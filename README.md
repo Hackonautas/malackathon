@@ -39,10 +39,11 @@ Welcome to **Alveus**, the **Reservoir Data Dashboard**! This web application pr
 ---
 
 ## 🏆 Actual page
-![Alt text](./Home.png)
-![Alt text](./List.png)
-![Alt text](./List_2.png)
-![Alt text](./Contact.png)
+![Alt text](./home)
+![Alt text](./list)
+![Alt text](./list_2)
+![Alt text](./About_us)
+![Alt text](./contact)
 
 
 ## 🏆 Final page
