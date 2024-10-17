@@ -157,19 +157,19 @@ Contributions are what make the open-source community such an amazing place to l
 
 
 2. Create a Branch
-
+```
 git checkout -b feature/YourFeature
-
+```
 
 3. Commit Your Changes
-
+```
 git commit -m 'Add some feature'
-
+```
 
 4. Push to the Branch
-
+```
 git push origin feature/YourFeature
-
+```
 
 5. Open a Pull Request
 
