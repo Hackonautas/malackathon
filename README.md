@@ -1,4 +1,6 @@
-# 🌊 Reservoir Data Dashboard
+Gracias por la aclaración. Aquí tienes el README actualizado para el proyecto Alveus, basado en la tecnología que has compartido:
+
+# 🌊 Alveus - Reservoir Data Dashboard
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Technology](https://img.shields.io/badge/Tech-Svelte%20|%20Bulma%20|%20Rust-blue)
@@ -6,7 +8,7 @@
 
 ## 📜 Table of Contents
 
-- [🌊 Reservoir Data Dashboard](#-reservoir-data-dashboard)
+- [🌊 Alveus - Reservoir Data Dashboard](#-alveus---reservoir-data-dashboard)
   - [📖 Table of Contents](#-table-of-contents)
   - [🚀 About the Project](#-about-the-project)
     - [🔍 Features](#-features)
@@ -28,7 +30,7 @@
 
 ## 🚀 About the Project
 
-Welcome to the **Reservoir Data Dashboard**! This web application provides comprehensive information about nearby reservoirs, including current water levels, historical data, averages, and interactive graphs. Leveraging the power of Oracle Cloud for our database and hosting infrastructure, we've built a robust and scalable solution to deliver real-time and historical reservoir data to users.
+Welcome to **Alveus**, the **Reservoir Data Dashboard**! This web application provides comprehensive information about nearby reservoirs, including current water levels, historical data, averages, and interactive graphs. Leveraging the power of Oracle Cloud for our database and hosting infrastructure, we've built a robust and scalable solution to deliver real-time and historical reservoir data to users.
 
 ![Dashboard Screenshot](./assets/dashboard-screenshot.png)
 
@@ -57,7 +59,7 @@ Welcome to the **Reservoir Data Dashboard**! This web application provides compr
 
 ## 🌐 Live Demo
 
-Check out the live version of the Reservoir Data Dashboard [here](https://your-live-demo-link.com).
+Check out the live version of **Alveus** [here](https://your-live-demo-link.com).
 
 ## 💾 Installation
 
@@ -75,8 +77,8 @@ Before you begin, ensure you have met the following requirements:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your-username/reservoir-data-dashboard.git
-   cd reservoir-data-dashboard
+   git clone https://github.com/your-username/alveus.git
+   cd alveus
 
 2. Setup the Frontend
 
@@ -102,7 +104,7 @@ Ensure you have your Oracle Cloud credentials and database set up. Update the en
 
 🔗 Accessing the Web App
 
-Once the frontend and backend are running, navigate to http://localhost:3000 in your browser to access the Reservoir Data Dashboard.
+Once the frontend and backend are running, navigate to http://localhost:3000 in your browser to access Alveus.
 
 📊 Exploring Reservoir Data
 
@@ -188,9 +190,3 @@ Bulma
 Rust
 
 Oracle Cloud
-
-GitHub Templates
-
-
-
-
