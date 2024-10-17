@@ -12,7 +12,7 @@
   - - [📝 Project Report](#-project-report)
     - [🔍 Features](#-features)
     - [🛠️ Technologies Used](#️-technologies-used)
-    - [🎨 Color Palette: 🟦 🟪 ⚪️ 🟫](#-Colors)
+    - [🎨 Color Palette: 🟦 🟪 ⚪️ 🟫](#-🎨-color-palette-🟦-🟪-⚪️-🟫)
   - [🌐 Live Demo](#-live-demo)
   - [💾 Installation](#-installation)
     - [⚙️ Prerequisites](#️-prerequisites)
