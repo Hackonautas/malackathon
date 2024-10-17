@@ -129,13 +129,13 @@ Once the frontend and backend are running, navigate to http://localhost:3000 in 
 
 📊 Exploring Reservoir Data
 
-Dashboard: View current water levels of nearby reservoirs at a glance.
+- **Dashboard**: View current water levels of nearby reservoirs at a glance.
 
-Historical Data: Select a reservoir to view its historical water levels and trends.
+- **Historical Data**: Select a reservoir to view its historical water levels and trends.
 
-Statistics: Access average water levels and other relevant statistics.
+- **Statistics**: Access average water levels and other relevant statistics.
 
-Graphs: Interact with dynamic charts to visualize data over time.
+ - **Graphs**: Interact with dynamic charts to visualize data over time.
 
 
 🔧 Configuration
@@ -176,25 +176,25 @@ Contributions are what make the open-source community such an amazing place to l
 
 📋 Guidelines
 
-1. Fork the Repository
+**1. Fork the Repository**
 
 
-2. Create a Branch
+**2. Create a Branch**
 ```
 git checkout -b feature/YourFeature
 ```
 
-3. Commit Your Changes
+**3. Commit Your Changes**
 ```
 git commit -m 'Add some feature'
 ```
 
-4. Push to the Branch
+**4. Push to the Branch**
 ```
 git push origin feature/YourFeature
 ```
 
-5. Open a Pull Request
+**5. Open a Pull Request**
 
 
 
