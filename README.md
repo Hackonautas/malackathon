@@ -32,7 +32,7 @@
 Welcome to **Alveus**, the **Reservoir Data Dashboard**! This web application provides comprehensive information about nearby reservoirs, including current water levels, historical data, averages, and interactive graphs. Leveraging the power of Oracle Cloud for our database and hosting infrastructure, we've built a robust and scalable solution to deliver real-time and historical reservoir data to users.
 
 
-##📝 Project Report
+## 📝 Project Report
 
 The project began at 10:00 AM after attending a presentation from the various partners at the Malakathon hackathon. We started by dividing the work among the five team members, ensuring efficiency and distribution based on each individual’s expertise. This approach allowed everyone to contribute and learn, ensuring that we leveraged each member’s strengths.
 
