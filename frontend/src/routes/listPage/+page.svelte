@@ -8,12 +8,15 @@
     $: filtered_data = data.embalses.filter((e) =>
         e.embalse.toLowerCase().startsWith(txt),
     );
+    let page = 1;
 </script>
 
 <svelte:head>
     <title>About</title>
     <meta name="description" content="About this app" />
 </svelte:head>
+
+<div class="spacer"></div>
 
 <div class="field">
     <p class="control has-icons-left has-icons-right">
@@ -40,3 +43,56 @@
         </div>
     {/each}
 </div>
+
+<nav class="pagination" role="navigation" aria-label="pagination">
+    <ul class="pagination-list">
+        <li>
+            <a href="#" class="pagination-link" aria-label="Goto page {page-1}">{page-1}</a>
+        </li>
+        <li>
+            <a class="pagination-link is-current" aria-label="Page {page}" aria-current="page">{page}</a>
+        </li>
+        <li>
+            <a href="/#" class="pagination-link" aria-label="Goto page {page+1}">{page+1}</a>
+        </li>
+    </ul>
+</nav>
+
+<style>
+    .spacer {
+        height: 20px; /* Altura del espacio vacío */
+    }
+
+    .pagination {
+        background-color: #f8f9fa; /* Color de fondo de la paginación */
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .pagination-list {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .pagination-link {
+        color: #405D72; /* Color del texto de los enlaces */
+        text-decoration: none;
+        padding: 5px 10px;
+        border: 1px solid #405D72;
+        border-radius: 3px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    .pagination-link:hover {
+        background-color: #405D72;
+        color: #FFF8F3; /* Color del texto al pasar el ratón por encima */
+    }
+
+    .pagination-link.is-current {
+        background-color: #405D72;
+        color: #FFF8F3; /* Color del texto del enlace actual */
+        border-color: #405D72;
+    }
+</style>
