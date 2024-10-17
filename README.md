@@ -70,8 +70,8 @@ To ensure scalability and facilitate the handling of large volumes of data, we u
 
 The following are descriptions of the three datasets used in the project:
 
-A. Reservoir Data
-
+ Reservoir Data
+```
 ID: Unique identifier for each reservoir.
 
 AMBITO_NOMBRE: Name of the hydrographic basin or region to which the reservoir belongs.
@@ -81,19 +81,19 @@ EMBALSE_NOMBRE: Name of the reservoir.
 AGUA_TOTAL: Total volume of water stored in the reservoir (in cubic hectometers).
 
 ELECTRICO_FLAG: Binary indicator for whether the reservoir is used for electricity generation (0 = Not used, 1 = Used for electricity generation).
+```
 
-
-B. Water Data
-
+ Water Data
+```
 FECHA: Date and time of the water measurement in the reservoir.
 
 AGUA_ACTUAL: Current volume of water stored in the reservoir on the specified date (in cubic hectometers).
 
 ID: Unique identifier linking the measurement to the corresponding reservoir.
+```
 
-
-C. Reservoir Listing
-
+ Reservoir Listing
+```
 CODIGO: Unique code for the reservoir.
 
 NOMBRE: Official name of the reservoir or dam.
@@ -125,18 +125,18 @@ COTA_CORON: Elevation of the dam crest (in meters above sea level).
 ALT_CIMIEN: Foundation height or maximum dam height (in meters).
 
 INFORME: Link to a report or web service related to the reservoir.
+```
+
+- 4. **Data Processing**
+
+**Duplicate Row Removal**: During the data cleaning process, duplicate rows and NaN values were removed. In case of duplicates, the row with the most available data was retained.
+
+**Statistical Functions**: Functions were implemented to retrieve maximum, minimum, historical, and average values of the water volume stored in each reservoir.
+
+**Temporal Selection**: We added the ability to select data based on specific time ranges to analyze changes in water storage volumes over time.
 
 
-- 4. Data Processing
-
-Duplicate Row Removal: During the data cleaning process, duplicate rows and NaN values were removed. In case of duplicates, the row with the most available data was retained.
-
-Statistical Functions: Functions were implemented to retrieve maximum, minimum, historical, and average values of the water volume stored in each reservoir.
-
-Temporal Selection: We added the ability to select data based on specific time ranges to analyze changes in water storage volumes over time.
-
-
-- 5. Table Joining
+- 5. **Table Joining**
 
 Finally, we joined the tables for reservoirs, water, and the reservoir listing using the ID common to all of them. This allowed us to combine geographic and technical data for each reservoir with historical water measurements, providing a complete view of the status and capacity of the reservoirs.
 
