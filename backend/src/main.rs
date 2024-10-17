@@ -1,8 +1,10 @@
 use axum::{
+    http::{HeaderValue, Method},
     routing::{get, post},
     Router,
 };
 use routes::{all_reservoirs, reservoir_by_id, reservoir_history, reservoirs_in_range};
+use tower_http::cors::CorsLayer;
 use tracing::info;
 
 mod models;
@@ -21,7 +23,12 @@ async fn main() {
         .route("/reservoirs", get(all_reservoirs))
         .route("/reservoirs", post(reservoirs_in_range))
         .route("/reservoir/:id", get(reservoir_by_id))
-        .route("/reservoir/:id/historical", get(reservoir_history));
+        .route("/reservoir/:id/historical", get(reservoir_history))
+        .layer(
+            CorsLayer::new()
+                .allow_origin("http://localhost:3000".parse::<HeaderValue>().unwrap())
+                .allow_methods([Method::GET]),
+        );
 
     let port = std::env::var("PORT").unwrap_or_else(|_| "3000".to_string());
 
