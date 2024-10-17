@@ -24,11 +24,7 @@ async fn main() {
         .route("/reservoirs", post(reservoirs_in_range))
         .route("/reservoir/:id", get(reservoir_by_id))
         .route("/reservoir/:id/historical", get(reservoir_history))
-        .layer(
-            CorsLayer::new()
-                .allow_origin("http://localhost:3000".parse::<HeaderValue>().unwrap())
-                .allow_methods([Method::GET]),
-        );
+        .layer(CorsLayer::permissive());
 
     let port = std::env::var("PORT").unwrap_or_else(|_| "3000".to_string());
 

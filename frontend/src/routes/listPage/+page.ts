@@ -3,17 +3,7 @@
 export const prerender = true;
 
 export async function load() {
-  const res = await fetch(
-    "http://localhost:3000/reservoirs",
-    // cors
-    {
-      mode: "cors",
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-        "Content-Type": "application/json",
-      },
-    },
-  );
+  const res = await fetch("http://localhost:3000/reservoirs");
   const embalses = await res.json();
   console.log(embalses);
   return {
