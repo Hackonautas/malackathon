@@ -10,7 +10,8 @@
   - [📖 Table of Contents](#-table-of-contents)
   - [🏆 Objetive page](#🏆-Objetive-page)
   - [🚀 About the Project](#-about-the-project)
-  - - [📝 Project Report](#-project-report)
+    - [🏆 Objetive page](#🏆-Objetive-page)
+    - [📝 Project Report](#-project-report)
     - [🔍 Features](#-features)
     - [🛠️ Technologies Used](#️-technologies-used)
     - [🎨 Color Palette: 🟦 🟪 ⚪️ 🟫](#-🎨-color-palette-🟦-🟪-⚪️-🟫)
@@ -29,7 +30,14 @@
   - [📜 License](#-license)
   - [🙏 Acknowledgements](#-acknowledgements)
  
-##🏆 Objetive page
+
+
+## 🚀 About the Project
+
+Welcome to **Alveus**, the **Reservoir Data Dashboard**! This web application provides comprehensive information about nearby reservoirs, including current water levels, historical data, averages, and interactive graphs. Leveraging the power of Oracle Cloud for our database and hosting infrastructure, we've built a robust and scalable solution to deliver real-time and historical reservoir data to users.
+
+---
+## 🏆 Objetive page
 
 ![Alt text](./header.png)
 ![Alt text](./body.png)
@@ -37,12 +45,6 @@
 ![Alt text](./final.png)
 
 ---
-
-## 🚀 About the Project
-
-Welcome to **Alveus**, the **Reservoir Data Dashboard**! This web application provides comprehensive information about nearby reservoirs, including current water levels, historical data, averages, and interactive graphs. Leveraging the power of Oracle Cloud for our database and hosting infrastructure, we've built a robust and scalable solution to deliver real-time and historical reservoir data to users.
-
-
 ## 📝 Project Report
 
 ---
