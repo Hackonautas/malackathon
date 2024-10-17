@@ -49,8 +49,6 @@ Initially, we aimed to use React, driven by its popularity and the wide range of
 
 We began by sketching the design by hand, which we later processed using GPT-4's computer vision capabilities. This innovative approach enabled us to automatically interpret the sketches and receive nuanced suggestions for improvement. These recommendations were integrated into Vercel V0 Chat, which further accelerated the frontend development process. Once we had a solid design plan, we implemented it using Svelte and Bulma, ensuring a clean, responsive, and aesthetically pleasing user interface. Before diving into the coding, we held a brainstorming session to carefully map out the structure and flow of the page, ensuring a cohesive and user-friendly experience.
 
-Aquí tienes el README actualizado, integrando la información sobre el uso de Rust para el backend:
-
 
 ---
 
@@ -58,15 +56,15 @@ Aquí tienes el README actualizado, integrando la información sobre el uso de R
 
 This backend is responsible for managing and processing data related to reservoirs and their water volumes, with the goal of providing updated information on the water status of various reservoirs through both historical and real-time data. The data is structured across three main files, each containing complementary information: reservoirs, water, and a reservoir listing.
 
-- 1. Technology Stack
+- **Technology Stack**
 
 For the backend, we chose to work with Rust, prioritizing performance and security. Rust's emphasis on memory safety without sacrificing speed allowed us to write highly optimized code. The language's inherent security features provided peace of mind, knowing that our solution would be both robust and efficient. We integrated the backend seamlessly with Oracle Cloud, ensuring that data handling was smooth and secure throughout the entire project lifecycle.
 
-- 2. Data Loading
+- **Data Loading**
 
 To ensure scalability and facilitate the handling of large volumes of data, we used SQL Developer to load and manipulate data from the three primary files. This tool allows us to manage large tables and optimize queries.
 
-- 3. Data Structure
+- **Data Structure**
 
 The following are descriptions of the three datasets used in the project:
 
@@ -127,7 +125,7 @@ ALT_CIMIEN: Foundation height or maximum dam height (in meters).
 INFORME: Link to a report or web service related to the reservoir.
 ```
 
-- 4. **Data Processing**
+- **Data Processing**
 
 **Duplicate Row Removal**: During the data cleaning process, duplicate rows and NaN values were removed. In case of duplicates, the row with the most available data was retained.
 
@@ -136,7 +134,7 @@ INFORME: Link to a report or web service related to the reservoir.
 **Temporal Selection**: We added the ability to select data based on specific time ranges to analyze changes in water storage volumes over time.
 
 
-- 5. **Table Joining**
+- **Table Joining**
 
 Finally, we joined the tables for reservoirs, water, and the reservoir listing using the ID common to all of them. This allowed us to combine geographic and technical data for each reservoir with historical water measurements, providing a complete view of the status and capacity of the reservoirs.
 
