@@ -34,26 +34,35 @@ Welcome to **Alveus**, the **Reservoir Data Dashboard**! This web application pr
 
 ## 📝 Project Report
 
-The project began at 10:00 AM after attending a presentation from the various partners at the Malakathon hackathon. We started by dividing the work among the five team members, ensuring efficiency and distribution based on each individual’s expertise. This approach allowed everyone to contribute and learn, ensuring that we leveraged each member’s strengths.
+---
 
-In the days prior to the hackathon, we experimented with Oracle Cloud, setting up an autonomous database. This system's automatic detection of data types facilitated both the usage and the creation of our project. We also created a static IP for our instance, exploring the different cloud options available for instance configuration. After preparing a cost estimate, we were ready for the hackathon day.
+The project officially began at 10:00 AM after we attended a presentation by various partners at the Malakathon hackathon. We immediately organized our team of five, strategically dividing the tasks based on each member’s strengths and expertise. This not only ensured that the workload was distributed efficiently but also fostered an environment where everyone could contribute meaningfully and learn from the process.
 
-On the day of the event, we divided into two groups: three team members focused on the frontend and two on the backend.
+In the days leading up to the hackathon, we conducted several trials with Oracle Cloud, where we set up an autonomous database. The system's ability to automatically detect data types streamlined both the implementation and the management of our project. Additionally, we assigned a static IP address to our instance and explored different cloud configuration options to optimize performance. After finalizing a cost estimate, we felt confident and prepared for the main event.
 
-Frontend
+On the day of the hackathon, we split into two groups: three members focused on the frontend while the other two concentrated on the backend.
 
-The frontend team started by sketching the design on paper, which was later processed using GPT-4’s computer vision capabilities. This allowed us to automatically interpret the drawings and add nuanced suggestions for improvement. We used these prompts within Vercel V0 Chat, which helped accelerate the development of the frontend. We then implemented the final design using Svelte and Bulma, ensuring a clean and responsive user interface. Prior to coding, we also conducted a brainstorming session to map out the structure of the page.
+**Frontend Development**
 
-Backend
+Initially, we aimed to use React, driven by its popularity and the wide range of resources available. However, as we delved into the implementation, we realized that our limited experience with React, combined with the complexity of the framework, made it difficult to deliver a high-quality solution within the tight time constraints. After evaluating the situation, we decided to pivot and opted for Svelte and Bulma instead. These technologies allowed us to work more efficiently and achieve our goals without compromising on design or functionality.
 
-For the backend, we opted to use Rust to develop a solution that prioritized performance and security. Rust enabled us to write efficient and optimized code while maintaining high security standards.
+We began by sketching the design by hand, which we later processed using GPT-4's computer vision capabilities. This innovative approach enabled us to automatically interpret the sketches and receive nuanced suggestions for improvement. These recommendations were integrated into Vercel V0 Chat, which further accelerated the frontend development process. Once we had a solid design plan, we implemented it using Svelte and Bulma, ensuring a clean, responsive, and aesthetically pleasing user interface. Before diving into the coding, we held a brainstorming session to carefully map out the structure and flow of the page, ensuring a cohesive and user-friendly experience.
 
-Conclusion
+**Backend Development**
 
-The project involved long hours of hard work, but with the support from professionals who visited during the event and the cooperation among team members, we successfully delivered the project.
+For the backend, we chose to work with Rust, prioritizing performance and security. Rust's emphasis on memory safety without sacrificing speed allowed us to write highly optimized code. The language's inherent security features also provided peace of mind, knowing that our solution would be both robust and efficient. We integrated the backend seamlessly with Oracle Cloud, ensuring that data handling was smooth and secure throughout the entire project lifecycle.
 
-This experience has been enriching, allowing us to push the limits of what we could achieve together while benefiting from the tools and resources at our disposal.
+**Challenges and Solutions**
 
+One of the most significant challenges we faced was the shift in our frontend technology stack. While React is a powerful tool, its steep learning curve and the complexity of setting it up in such a short timeframe posed issues that slowed our initial progress. After recognizing this, switching to Svelte and Bulma proved to be a game-changer, as it allowed us to regain momentum and work in a more straightforward, adaptable environment. Another challenge was ensuring that the backend architecture, designed in Rust, could efficiently communicate with the frontend and handle cloud interactions with Oracle. However, by leveraging the strengths of each team member, we were able to overcome these obstacles effectively.
+
+**Conclusion**
+
+Throughout the project, we worked long hours, but the support from professionals at the event and the collaboration within our team were key to our success. We were able to deliver a fully functional solution that not only met the project requirements but also exceeded our initial expectations.
+
+This hackathon experience has been incredibly rewarding. It allowed us to push the boundaries of our capabilities, work with cutting-edge tools, and adapt quickly to unforeseen challenges. Most importantly, it reinforced the value of teamwork and adaptability when working under pressure, showing us how far we could go by leveraging the skills and resources at our disposal.
+
+---
 
 ### 🔍 Features
 
