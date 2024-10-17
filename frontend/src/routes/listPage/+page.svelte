@@ -2,6 +2,12 @@
     import Card from "$lib/components/Card.svelte";
 
     export let data;
+
+    let txt = "";
+
+    $: filtered_data = data.embalses.filter((e) =>
+        e.embalse.toLowerCase().startsWith(txt),
+    );
 </script>
 
 <svelte:head>
@@ -15,6 +21,7 @@
             class="input is-rounded"
             type="text"
             placeholder="Nombre del pantano o embalse"
+            bind:value={txt}
         />
         <span class="icon is-left">
             <i class="fa-solid fa-magnifying-glass"></i>
@@ -23,7 +30,7 @@
 </div>
 
 <div class="columns is-multiline">
-    {#each data.embalses as embalse}
+    {#each filtered_data as embalse}
         <div class="column is-3">
             <Card
                 name={embalse.embalse}
