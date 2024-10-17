@@ -1,11 +1,19 @@
 use axum::Json;
 use tracing::info;
 
-use crate::models::{Coords, Reservoir};
+use crate::models::{Coords, OracleResponse, Reservoir};
 
 /// Get all reservoirs
 pub async fn all_reservoirs() -> Json<Vec<Reservoir>> {
-    Json(vec![])
+    let stuff: OracleResponse<Reservoir> = reqwest::get(
+        "https://gd419a46b456aec-db2.adb.eu-madrid-1.oraclecloudapps.com/ords/backo/v_listado_info/",
+    )
+    .await
+    .unwrap()
+    .json()
+    .await
+    .unwrap();
+    Json(stuff.items)
 }
 
 /// Get reservoirs in range
