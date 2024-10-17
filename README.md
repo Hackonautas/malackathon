@@ -186,7 +186,7 @@ This hackathon experience has been incredibly rewarding. It allowed us to push t
   
 - **Database & Hosting:**
   - [Oracle Cloud](https://www.oracle.com/cloud/) - Comprehensive cloud services for databases and hosting.
-  - Database funtions and code [database.sql](./database.sql) 
+  - Database funtions and code [Database.sql](./Database.sql) 
 ---
 
 ## 🎨 Color Palette: 🟦 🟪 ⚪️ 🟫
