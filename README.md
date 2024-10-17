@@ -10,6 +10,7 @@
   - [📖 Table of Contents](#-table-of-contents)
   - [🏆 Objetive page](#🏆-Objetive-page)
   - [🚀 About the Project](#-about-the-project)
+    - [🏆 Actual Page](#🏆-Actual-Page)
     - [🏆 Final page](#🏆-Final-page)
     - [📝 Project Report](#-project-report)
     - [🔍 Features](#-features)
@@ -56,7 +57,6 @@ Welcome to **Alveus**, the **Reservoir Data Dashboard**! This web application pr
 ---
 ## 📝 Project Report
 
----
 
 The project officially began at 10:00 AM after we attended a presentation by various partners at the Malakathon hackathon. We immediately organized our team of five, strategically dividing the tasks based on each member’s strengths and expertise. This not only ensured that the workload was distributed efficiently but also fostered an environment where everyone could contribute meaningfully and learn from the process.
 
