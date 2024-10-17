@@ -78,21 +78,21 @@ Before you begin, ensure you have met the following requirements:
    git clone https://github.com/Hackonautas/malackathon.git
    cd alveus
 
-2. Setup the Frontend
+2. **Setup the Frontend**
 
 cd frontend
 npm install
 npm run dev
 
 
-3. Setup the Backend
+3. **Setup the Backend**
 
 cd ../backend
 cargo build --release
 cargo run --release
 
 
-4. Configure Oracle Cloud
+4. **Configure Oracle Cloud**
 
 Ensure you have your Oracle Cloud credentials and database set up. Update the environment variables accordingly.
 
