@@ -42,7 +42,7 @@ On the day of the event, we divided into two groups: three team members focused 
 
 Frontend
 
-The frontend team started by sketching the design on paper, which was later processed using GPT-4’s computer vision capabilities. This allowed us to automatically interpret the drawings and add nuanced suggestions for improvement. We used these prompts within Verce V0 Chat, which helped accelerate the development of the frontend. We then implemented the final design using Svelte and Bulma, ensuring a clean and responsive user interface. Prior to coding, we also conducted a brainstorming session to map out the structure of the page.
+The frontend team started by sketching the design on paper, which was later processed using GPT-4’s computer vision capabilities. This allowed us to automatically interpret the drawings and add nuanced suggestions for improvement. We used these prompts within Vercel V0 Chat, which helped accelerate the development of the frontend. We then implemented the final design using Svelte and Bulma, ensuring a clean and responsive user interface. Prior to coding, we also conducted a brainstorming session to map out the structure of the page.
 
 Backend
 
