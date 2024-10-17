@@ -10,7 +10,7 @@
   - [📖 Table of Contents](#-table-of-contents)
   - [🏆 Objetive page](#🏆-Objetive-page)
   - [🚀 About the Project](#-about-the-project)
-    - [🏆 Actual Page](#🏆-Actual-Page)
+    - [🏆 Actual Page](#-🏆-Actual-Page)
     - [🏆 Final page](#🏆-Final-page)
     - [📝 Project Report](#-project-report)
     - [🔍 Features](#-features)
