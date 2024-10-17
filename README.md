@@ -9,6 +9,7 @@
 - [🌊 Alveus - Reservoir Data Dashboard](#-alveus---reservoir-data-dashboard)
   - [📖 Table of Contents](#-table-of-contents)
   - [🚀 About the Project](#-about-the-project)
+  - - [📝 Project Report](#-project-report)
     - [🔍 Features](#-features)
     - [🛠️ Technologies Used](#️-technologies-used)
   - [🌐 Live Demo](#-live-demo)
@@ -30,7 +31,29 @@
 
 Welcome to **Alveus**, the **Reservoir Data Dashboard**! This web application provides comprehensive information about nearby reservoirs, including current water levels, historical data, averages, and interactive graphs. Leveraging the power of Oracle Cloud for our database and hosting infrastructure, we've built a robust and scalable solution to deliver real-time and historical reservoir data to users.
 
-![Dashboard Screenshot](./assets/dashboard-screenshot.png)
+
+##📝 Project Report
+
+The project began at 10:00 AM after attending a presentation from the various partners at the Malakathon hackathon. We started by dividing the work among the five team members, ensuring efficiency and distribution based on each individual’s expertise. This approach allowed everyone to contribute and learn, ensuring that we leveraged each member’s strengths.
+
+In the days prior to the hackathon, we experimented with Oracle Cloud, setting up an autonomous database. This system's automatic detection of data types facilitated both the usage and the creation of our project. We also created a static IP for our instance, exploring the different cloud options available for instance configuration. After preparing a cost estimate, we were ready for the hackathon day.
+
+On the day of the event, we divided into two groups: three team members focused on the frontend and two on the backend.
+
+Frontend
+
+The frontend team started by sketching the design on paper, which was later processed using GPT-4’s computer vision capabilities. This allowed us to automatically interpret the drawings and add nuanced suggestions for improvement. We used these prompts within Verce V0 Chat, which helped accelerate the development of the frontend. We then implemented the final design using Svelte and Bulma, ensuring a clean and responsive user interface. Prior to coding, we also conducted a brainstorming session to map out the structure of the page.
+
+Backend
+
+For the backend, we opted to use Rust to develop a solution that prioritized performance and security. Rust enabled us to write efficient and optimized code while maintaining high security standards.
+
+Conclusion
+
+The project involved long hours of hard work, but with the support from professionals who visited during the event and the cooperation among team members, we successfully delivered the project.
+
+This experience has been enriching, allowing us to push the limits of what we could achieve together while benefiting from the tools and resources at our disposal.
+
 
 ### 🔍 Features
 
