@@ -26,7 +26,7 @@
         <div class="navbar-start">
             <a class="navbar-item" href="/listPage"> Listado </a>
 
-            <a class="navbar-item"> Información </a>
+            <a class="navbar-item" href="/about"> Información </a>
 
             <a class="navbar-item"> Ajustes y Accesibilidad </a>
 
