@@ -1,34 +1,44 @@
+<script>
+  export let image;
+  export let name;
+  export let capacity;
+  export let place;
+
+</script>
+
 <div class="card">
-    <div class="card-image">
-      <figure class="image is-4by3">
-        <img
-          src="https://bulma.io/assets/images/placeholders/1280x960.png"
-          alt="Placeholder image"
-        />
-      </figure>
-    </div>
-    <div class="card-content">
-      <div class="media">
-        <div class="media-left">
-          <figure class="image is-48x48">
-            <img
-              src="https://bulma.io/assets/images/placeholders/96x96.png"
-              alt="Placeholder image"
-            />
-          </figure>
-        </div>
-        <div class="media-content">
-          <p class="title is-4">John Smith</p>
-          <p class="subtitle is-6">@johnsmith</p>
-        </div>
-      </div>
-  
-      <div class="content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
-        iaculis mauris. <a>@bulmaio</a>. <a href="#">#css</a>
-        <a href="#">#responsive</a>
-        <br />
-        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-      </div>
-    </div>
-  </div>
+  <img src={image} alt={name} />
+  <h3>{name}</h3>
+  <p>Capacidad: {capacity} hm<sup>3</p>
+  <p>Ubicación: {place} </p>
+</div>
+
+<style>
+      .card {
+        width: 200px; /* Ancho más grande */
+        height: 300px; /* Alto más grande */
+        padding: 10px;
+        border: 1px solid #ddd;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card img {
+        width: 100%;
+        height: 150px; /* Asegura que las imágenes tengan una altura constante */
+        object-fit: cover; /* Las imágenes se ajustarán al espacio sin distorsión */
+        border-radius: 5px;
+    }
+
+    .card h3 {
+        margin: 10px 0 5px;
+    }
+
+    .card p {
+        margin: 0;
+    }
+</style>
