@@ -12,6 +12,7 @@
   - - [📝 Project Report](#-project-report)
     - [🔍 Features](#-features)
     - [🛠️ Technologies Used](#️-technologies-used)
+    - [🔍 Colors](#-Colors)
   - [🌐 Live Demo](#-live-demo)
   - [💾 Installation](#-installation)
     - [⚙️ Prerequisites](#️-prerequisites)
@@ -86,6 +87,34 @@ This hackathon experience has been incredibly rewarding. It allowed us to push t
   
 - **Database & Hosting:**
   - [Oracle Cloud](https://www.oracle.com/cloud/) - Comprehensive cloud services for databases and hosting.
+---
+
+## Color Scheme Justification
+
+In the development of our website, we carefully selected a color palette focused on accessibility for individuals with visual impairments. Our goal is to ensure that all users can easily navigate and comprehend the content without difficulty. The combination of colors we chose follows the principles outlined by the WCAG (Web Content Accessibility Guidelines) to maximize readability and contrast.
+
+**Selected Colors**:
+
+Dark blue and bluish-gray tones: The dominant colors are dark blue and grayish shades, which provide adequate contrast without being too harsh on the eyes. These colors allow text to be easily readable by individuals with low vision or color blindness, while also minimizing visual fatigue.
+
+Soft cream and off-white tones: The lighter sections of the design, combining soft cream with off-white, are designed to avoid overly bright backgrounds. This is particularly important for users with light sensitivity or visual impairments that make it difficult to read against pure white or highly contrasted backgrounds.
+
+
+**Accessibility Principles Applied**:
+
+1. **Adequate contrast**: The selected color scheme ensures sufficient contrast between text and background, in line with WCAG recommendations, making the content legible for users with visual disabilities, including color blindness.
+
+
+2. **Ease of reading**: The chosen tones allow for easy distinction between different sections of the site without overwhelming users. We avoided saturated or neon colors, which could be distracting or difficult to perceive for users with visual impairments.
+
+
+3. **Visual consistency**: The color palette provides a cohesive and relaxing visual experience, reducing cognitive effort required to process the content.
+
+
+
+With this approach, our website becomes a more inclusive tool, offering all users, regardless of their abilities, an accessible and enjoyable experience.
+
+
 ---
 ## 🌐 Live Demo
 
