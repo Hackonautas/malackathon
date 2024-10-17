@@ -2,45 +2,9 @@
     import Card from "$lib/components/Card.svelte";
 
     const dirección = "presa.png"
-    let cards = [
-        {
-            name: "patata",
-            capacity: 30,
-            image: dirección, // Ruta de la imagen
-            place: "Málaga, Andalucía",
-        },
-        {
-            name: "tomate",
-            capacity: 40,
-            image: dirección,
-            place: "Málaga, Andalucía",
-        },
-        {
-            name: "cebolla",
-            capacity: 50,
-            image: dirección,
-            place: "Málaga, Andalucía",
-        },
-        {
-            name: "zanahoria",
-            capacity: 20,
-            image: dirección,
-            place: "Málaga, Andalucía",
-        },
-        {
-            name: "lechuga",
-            capacity: 25,
-            image: dirección,
-            place: "Málaga, Andalucía",
-        },
-        {
-            name: "pepino",
-            capacity: 15,
-            image: dirección,
-            place: "Málaga, Andalucía",
-        },
-    ];
 </script>
+
+<div class="spacer"></div>
 
 <div class="field">
     <p class="control has-icons-left has-icons-right">
@@ -59,24 +23,27 @@
     />
 </svelte:head>
 
+<section class="hero is-large is-primary">
+    <div class="hero-body">
+      <p class="title">Alveus: Plataforma de embalses de España</p>
+      <p class="subtitle">Por un uso y administración sostenible</p>
+    </div>
+  </section>
+
+  <div class="spacer"></div>
+
 <style>
     .card-container {
         display: flex;
         flex-wrap: wrap;
         gap: 20px; /* Aumenta el espacio entre las tarjetas */
     }
+    .spacer {
+        height: 20px; /* Altura del espacio vacío */
+    }
 
 </style>
 
-<div class="card-container">
-    {#each cards as card}
-        <Card
-            name={card.name}
-            capacity={card.capacity}
-            image={card.image}
-            place={card.place}
-        />
-    {/each}
-</div>
+<div class="spacer"></div>
 
 
