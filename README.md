@@ -1,5 +1,3 @@
-Gracias por la aclaración. Aquí tienes el README actualizado para el proyecto Alveus, basado en la tecnología que has compartido:
-
 # 🌊 Alveus - Reservoir Data Dashboard
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
