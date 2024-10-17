@@ -1,53 +1,23 @@
 <script>
-	import Header from './Header.svelte';
-	import '../app.css';
-  </script>
-  
-  <div class="app bg-gray-900 text-white">
-	<Header />
-  
-	<main class="p-6">
-	  <slot />
-	</main>
-  
-	<footer class="bg-blue-900 p-4 text-center">
-	  <p>Visit <a href="https://kit.svelte.dev" class="text-blue-400">kit.svelte.dev</a> to learn SvelteKit</p>
-	</footer>
-  </div>
-  
-  <style>
-	.app {
-	  display: flex;
-	  flex-direction: column;
-	  min-height: 100vh;
-	}
-  
-	main {
-	  flex: 1;
-	  display: flex;
-	  flex-direction: column;
-	  padding: 1rem;
-	  width: 100%;
-	  max-width: 64rem;
-	  margin: 0 auto;
-	  box-sizing: border-box;
-	}
-  
-	footer {
-	  display: flex;
-	  flex-direction: column;
-	  justify-content: center;
-	  align-items: center;
-	  padding: 12px;
-	}
-  
-	footer a {
-	  font-weight: bold;
-	}
-  
-	@media (min-width: 480px) {
-	  footer {
-		padding: 12px 0;
-	  }
-	}
-  </style>
+    import "../app.css";
+</script>
+
+<div class="navbar bg-blue-400">
+    <div class="flex-1">
+        <a href="/" class="btn btn-ghost text-xl">Alveus</a>
+    </div>
+    <div class="flex-none">
+        <ul class="menu menu-horizontal px-1">
+            <li>
+                <a href="/login" class="btn btn-ghost">Tus muertos</a>
+            </li>
+            <li>
+                <a href="/register" class="btn btn-ghost">Involucrate</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<main class="container mx-auto px-4">
+    <slot />
+</main>
