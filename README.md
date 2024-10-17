@@ -148,37 +148,50 @@ Once the frontend and backend are running, navigate to http://localhost:3000 in 
 
  - **Graphs**: Interact with dynamic charts to visualize data over time.
 ---
+Here's an improved version of the section with a clearer structure and explanation:
 
-🔧 Configuration
+
+---
+
+🔧 Configuration Setup
 
 📁 Environment Variables
 
-Create a .env file in both frontend and backend directories with the following variables:
-
-Frontend .env
+You will need to create a .env file in both the frontend and backend directories to store the required environment variables.
+```
+Frontend .env File:
 
 VITE_API_URL=http://localhost:8000/api
 
-Backend .env
+This variable sets the API URL that the frontend will use to communicate with the backend.
+
+Backend .env File:
 
 DATABASE_URL=oracle://username:password@hostname:port/servicename
 PORT=8000
+
+DATABASE_URL: Specifies the connection string to your Oracle database instance, including credentials and the service name.
+
+PORT: Defines the port on which the backend will run (in this case, 8000).
+```
 
 🗄️ Database Setup
 
 1. Provision an Oracle Database
 
-Use the Oracle Cloud Console to create a new database instance.
 
+
+Log into the Oracle Cloud Console and create a new database instance. Make sure to note down the connection details, which you will include in the DATABASE_URL environment variable.
 
 2. Run Migrations
 
-Navigate to the backend directory and run:
+
+
+Once your database is set up, navigate to the backend directory in your project and run the following command to apply the necessary migrations and set up the database schema:
 
 cargo run --release
 
-This will apply the necessary migrations to set up the database schema.
-
+This command will execute the migrations required for initializing your database structure and ensure that your application is ready to interact with the database.
 
 ---
 🧑‍💻 Contributing
