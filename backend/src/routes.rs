@@ -21,6 +21,7 @@ fn get_url(endpoint: &str) -> String {
 
 /// Get all reservoirs
 pub async fn all_reservoirs(page: Option<Path<usize>>) -> Json<Vec<Reservoir>> {
+    info!("Getting reservoirs with page: {:?}", page);
     let offset = PAGE_SIZE * page.map(|x| x.0).unwrap_or(0);
     let endpoint = format!("v_listado_info?limit={}&offset={}", PAGE_SIZE, offset);
     let res: OracleResponse<Reservoir> = reqwest::get(get_url(&endpoint))

@@ -3,7 +3,7 @@
 export const prerender = true;
 
 export async function load() {
-  const res = await fetch("http://localhost:3000/reservoirs");
+  const res = await fetch("http://localhost:3000/reservoirs/0");
   const embalses = await res.json();
   console.log(embalses);
   return {

@@ -12,11 +12,11 @@
     />
 </svelte:head>
 
-<section class="hero is-large is-link is-bold">
+<section class="hero is-large">
     <div class="hero-body">
         <p class="title">Alveus: Plataforma de embalses de España</p>
         <p class="subtitle">Por un uso y administración sostenible</p>
-        <a class="button is-inverted is-link" href="/listPage"
+        <a class="button is-light" href="/listPage"
             >Ir al listado de embalses</a
         >
     </div>
@@ -27,6 +27,10 @@
 <div class="spacer"></div>
 
 <style>
+    .hero {
+        background: #F7E7DC;
+    }
+
     .card-container {
         display: flex;
         flex-wrap: wrap;

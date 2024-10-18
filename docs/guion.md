@@ -1,0 +1,7 @@
+- Solo el front está expuesto
+- El backend hace de intermediario entre front y bbdd
+- El backend puede escalar horizontalmente
+- Se puede Dockerizar
+- Paginación
+- Bajo ancho de banda
+- ancho de banda
