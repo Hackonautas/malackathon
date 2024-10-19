@@ -225,9 +225,6 @@ With this approach, our website becomes a more inclusive tool, offering all user
 
 
 ---
-## 🌐 Live Demo
-
-Check out the live version of **Alveus** [here](https://your-live-demo-link.com).
 
 ## 💾 Installation
 
@@ -251,15 +248,14 @@ Before you begin, ensure you have met the following requirements:
 2. **Setup the Frontend**
 ```
 cd frontend
-npm install
+npm i
 npm run dev
 
 ```
 3. **Setup the Backend**
 ```
 cd ../backend
-cargo build --release
-cargo run --release
+cargo r
 ```
 
 4. **Configure Oracle Cloud**
